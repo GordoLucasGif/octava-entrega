@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simulador de librería</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Simulador de librería</h1>
+
+        <section>
+            <h2>Nuevo producto</h2>
+            <form id="formulario">
+                <label>Nombre <input name="nombre" required></label>
+                <label>Categoría <input name="categoria" required></label>
+                <label>Precio ($) <input name="precio" type="number" min="0.01" step="0.01" required></label>
+                <label>Stock <input name="stock" type="number" min="0" step="1" required></label>
+                <button type="submit">Agregar producto</button>
+            </form>
+        </section>
+
+        <p id="mensaje" role="status"></p>
+
+        <section>
+            <h2>Catálogo</h2>
+            <label>Buscar por nombre <input id="buscador" type="search"></label>
+            <div id="catalogo" class="grilla"></div>
+        </section>
+
+        <section>
+            <h2>Carrito</h2>
+            <div id="resumen"></div>
+            <button id="vaciar" type="button" disabled>Vaciar carrito</button>
+            <button id="finalizar" type="button" disabled>Finalizar compra</button>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #17324d;
+    background: #eef5fb;
+}
+
+main {
+    max-width: 880px;
+    margin: auto;
+    padding: 20px;
+}
+
+section, article {
+    background: white;
+    border: 1px solid #c7daeb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+form, .grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 175px), 1fr));
+    gap: 12px;
+    align-items: end;
+}
+
+input, button {
+    box-sizing: border-box;
+    border: 1px solid #7295b5;
+    border-radius: 5px;
+    padding: 8px;
+    font: inherit;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 4px 0 10px;
+}
+
+form input {
+    margin-bottom: 0;
+}
+
+.grilla {
+    align-items: stretch;
+}
+
+article {
+    overflow-wrap: anywhere;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+button {
+    background: #205588;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #526579;
+    cursor: default;
+}
+
+#mensaje {
+    padding: 10px;
+    background: #d9f3e6;
+}
+
+#mensaje.error {
+    background: #fce2df;
+    color: #7a2020;
+}
+
+#mensaje:empty {
+    display: none;
+}
+
+#resumen {
+    white-space: pre-line;
+    margin-bottom: 12px;
+}
